@@ -1,13 +1,8 @@
 function solution(n) {
-  let number = n%2
   let result = 0;
-  if(number == 0) {
-    for(let i=1; i<=n/2; i++) {
-      result += 2*i
-    }
-  } else {
-        for(let i=1; i<=n/2; i++) {
-      result += 2*i
+  for(let i=0; i<=n; i++){
+    if(i%2 == 0) {
+      result += i
     }
   }
   return result
